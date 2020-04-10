@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Record Mic</title>
+</head>
+<body>
+
+  <div class="p-x text-center">
+    <div style="font-size:50px;padding-bottom:10px">
+        <label id="minutes">00</label>:<label id="seconds">00</label>
+    </div>
+    <div class="p-b">
+        <a class="btn-lg btn-primary btn-block recording" id="recording_button" style="text-decoration: none;cursor: pointer;">Start Recording</a>
+        <audio controls id="audioSource" style="display:none;width:100%" type="audio/ogg"></audio>
+
+    </div>
+    <div id="download_restart" class="smaller-font hidden">
+        <p style="cursor: pointer;"><a download id="download">Download as .ogg</a></p>
+        <p style="cursor: pointer;"><a id="restart">New Recording</a></p>
+    </div>
+
+</div>
+<script src="./js/jquery.min.js"></script>
+`<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <script src="./js/voiceRec.js" defer></script>
+</body>
+</html>

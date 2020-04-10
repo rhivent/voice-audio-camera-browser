@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- <script>
+window.ga = window.ga || function() {
+  (ga.q = ga.q || []).push(arguments);
+};
+ga('create', 'UA-33848682-1', 'auto');
+ga('set', 'transport', 'beacon');
+ga('send', 'pageview');
+</script> -->
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+
+<meta charset="utf-8">
+<meta name="description" content="Simplest possible examples of HTML, CSS and JavaScript.">
+<meta name="author" content="//google.com">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta itemprop="name" content="simpl.info: simplest possible examples of HTML, CSS and JavaScript">
+<meta itemprop="image" content="https://via.placeholder.com/50">
+<meta id="theme-color" name="theme-color" content="#fff">
+
+<link rel="icon" href="https://via.placeholder.com/50">
+
+<base target="_blank">
+<title>mediaDevices.enumerateDevices()</title>
+
+<link rel="stylesheet" href="./css/main.css">
+<style>
+
+</style>
+
+</head>
+
+<body>
+
+  <h1>Audio Test</h1>
+    <p>Simple example</p>
+	<div>
+		<audio id="audio" src="http://www.sousound.com/music/healing/healing_01.mp3" preload="auto"  ></audio>
+		<button id="play">Play</button>
+		<button id="stop">Stop</button>
+	</div>
+
+
+<div id="container">
+
+  <h1><a href="https://rhivent.github.io" title="simpl.info home page">My Github Repo</a>.<wbr>enumerateDevices()</h1>
+
+  <div class="select">
+    <label for="audioSource">Audio source: </label><select id="audioSource"></select>
+  </div>
+
+  <div class="select">
+    <label for="videoSource">Video source: </label><select id="videoSource"></select>
+  </div>
+
+  <video autoplay muted playsinline></video>
+
+  <script src="./js/main.js" async></script>
+  <script src="./js/audio.js"></script>
+
+  <p>For more information see <a href="https://www.html5rocks.com/en/tutorials/getusermedia/intro/" title="Media capture article by Eric Bidelman on HTML5 Rocks">Capturing Audio &amp; Video in HTML5</a> on HTML5 Rocks.</p>
+
+  <a href="https://github.com/samdutton/simpl/blob/gh-pages/getusermedia/sources/js/main.js" title="View source for this page on GitHub" id="viewSource">View source on GitHub</a>
+
+</div>
+
+<!-- <script>
+'use strict';
+
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-33848682-1']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+  var ga = document.createElement('script');
+  ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' === document.location.protocol ?
+    'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0];
+  s.parentNode.insertBefore(ga, s);
+})();
+</script> -->
+</body>
+</html>
